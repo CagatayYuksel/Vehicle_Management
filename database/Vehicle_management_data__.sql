@@ -1,14 +1,4 @@
-﻿/*
-Vehicle_management - örnek verileri içe aktarma betiği
-Kaynak: arac_filo_ornek_veri_seti.xlsx
-
-ÖNEMLİ:
-- Önce Vehicle_management_schema.sql dosyasını çalıştırmış olmalısınız.
-- Bu betik mevcut tabloların BOŞ olduğunu varsayar. Aynı ID'ler varsa unique/PK hatası oluşur.
-- Bu betik veri silmez ve tablo oluşturmaz.
-- dbo.Users'a demo hesap satırları eklenir ancak password_hash NULL kalır; Django oturum hesabı değildir.
-- Önce ayrı bir veritabanında çalıştırmanız önerilir.
-*/
+﻿
 USE [Vehicle_management];
 GO
 SET XACT_ABORT ON;
