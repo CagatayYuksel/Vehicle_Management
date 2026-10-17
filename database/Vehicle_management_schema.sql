@@ -1,21 +1,3 @@
-/*
-Araç & Filo Yönetimi - SQL Server şema oluşturma betiği
-Veritabanı: Vehicle_management
-
-KULLANIM:
-1. SQL Server Management Studio (SSMS) -> New Query
-2. Bu dosyanın tamamını açıp çalıştırın.
-3. Betik veritabanı yoksa oluşturur ve 16 tabloyu dbo şemasında oluşturur.
-
-UYARILAR:
-- Bu betik tablo şemasını oluşturur; Excel verilerini içe aktarmaz.
-- Mevcut tabloları silmez. Aynı adlı tablolar zaten varsa CREATE TABLE aşamasında hata alırsınız.
-- dbo.Users yalnızca uygulama/iş kullanıcıları için örnek tablodur.
-  Django giriş sistemi için önerilen yaklaşım Django'nun auth_user/auth_group vb. tablolarını
-  Django migrations ile oluşturmaktır. Bu Users tablosunu Django'nun auth tablosu sanmayın.
-- TrafficFines.driver_id, RentalContractDrivers.id alanına bağlanır.
-- Tutar alanlarında DECIMAL kullanılmıştır; kimlik alanları IDENTITY(1,1) biçimindedir.
-*/
 
 IF DB_ID(N'Vehicle_management') IS NULL
 BEGIN
