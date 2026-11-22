@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>Araçccccclar</title>  
+</head>
+<body>
+    <h1>Araclar</h1>
+    <table border="1">
+        <tr>
+            <th>Plakaaaa</th>
+            <th>Yılaaa</th>
+            <th>Yakıt Türü</th>
+            <th>Günlük Fiyat</th>
+            <th>Durum</th>
+            {% for a in araclar %}
+            <tr>
+                <td>{{ a.plate }}</td>
+                <td>{{ a.model_year }}</td>
+                <td>{{ a.fuel_type }}</td>
+                <td>{{ a.daily_price }}</td>
+                <td>{{ a.status }}</td>
+            </tr>
+            {% endfor %}
+        </tr>
+    </table>
+</body>
+</html>
